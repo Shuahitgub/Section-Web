@@ -1,0 +1,27 @@
+import { Footer, Nav } from "./components/Chrome";
+import { Gallery, Board, Traditions } from "./components/GalleryBoard";
+import { Guestbook } from "./components/Guestbook";
+import { Opener } from "./components/Opener";
+import { About, Officers } from "./components/People";
+import { Roster, Timeline } from "./components/RosterTimeline";
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-paper text-ink font-body antialiased">
+      <div className="noise-overlay" aria-hidden="true" />
+      <Nav />
+      <main>
+        <Opener />
+        <About />
+        <Officers />
+        <Roster />
+        <Timeline />
+        <Gallery />
+        <Board />
+        <Traditions />
+        <Guestbook />
+      </main>
+      <Footer />
+    </div>
+  );
+}
